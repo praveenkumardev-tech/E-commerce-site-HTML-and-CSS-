@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Craft World</title>
+    <link rel="icon" type="image/jpg" href="/images/craft world logo icon.png" style="transform: scale(900px);">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/5f67130492.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div id="home">
+    <header>
+        
+        <div class="navbar">
+            <div class="nav-logo border">
+                <div class="logo"></div>
+            </div>
+
+            <div class="header-all">
+
+            <div class="nav-address">
+                <p class="add-first">Deliver to</p>
+                <div class="add-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p class="add-sec">India</p>
+                </div>
+            </div>
+
+            <div class="nav-search">
+                <select class="search-select">
+                    <option>Filter</option>
+                    <option>Arts</option>
+                    <option>Crafts</option>
+                    <option>DIY Projects</option>
+                </select>
+
+                <input placeholder="Search Arts and Crafts Products..." class="search-input">
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+        </div>
+        <div class="nav-sign">
+            <a href="/Register/register.html" class="nav-reg">Register</a>
+            <a href="/Login/login.html" class="nav-log">Login</a>
+        </div>
+        <div class="nav-cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span>0</span>
+            <p style="position: absolute; top: 1px; left: 30px;">Cart</p>
+        </div>
+    </div>
+    <div class="hor-line">
+        <hr>
+    </div>
+    <div class="head-bottom">
+        <a href="#home"><i class="fa-solid fa-house"></i> Home</a>
+        <div class="dropdown">
+            <a href="#"><button class="dropbtn">Categories
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#arts" id="dropdow-list">Arts</a>
+              <a href="#crafts" id="dropdow-list">Crafts</a>
+              <a href="#diyprojects" id="dropdow-list">DIY Projects</a>
+            </div></a>
+            
+          </div>
+        <a href="#arts"><img src="/images/paint-palette.png" class="piant-icon">Arts</a>
+        <a href="#crafts"><img src="/images/craft.png" class="craft-icon">Crafts</a>
+        <a href="#diyprojects"><img src="/images/handcraft.png" class="diy-icon">DIY Projects</a>
+        <a href="#review"><img src="/images/positive-review.png" class="review-icon">Reviews</a>
+
+        <a href="#footer"><img src="/images/customer-service (1) (1).ico" class="cs-icon">Contact</a>
+        </div>
+    </header>
+
+
+    <!-- heroic Slideshow          -->
+
+    <div class="slideshow-container"> 
+        <div class="mySlides fade first-slide">
+            <div class="numbertext">
+                <p>1 / 3</p>
+            </div>
+            <img src="/images/small angel craft.jpg" style="width:100%">
+            <p class="text angel-text-black">Arts <button id="angel-text-black"><a href="#arts" style="text-decoration: none; color: black;">Explore Now</a></button></p>
+            </div>
+        <div class="mySlides fade">
+            <div class="numbertext">
+                <p>2 / 3</p>
+            </div>
+            <img src="/images/square toy.jpg" style="width:100%">
+            <p class="text">Crafts <button  class="slide-inside-btn"><a href="#crafts" style="text-decoration: none; color: white;">Explore Now</a></button></p>
+            </div>
+        <div class="mySlides fade">
+            <div class="numbertext">
+                <p>3 / 3</p>
+            </div>
+            <img src="/images/lighthang.jpg" style="width:100%">
+            <p class="text">DIY Projects <button class="slide-inside-btn"><a href="#diyprojects" style="text-decoration: none; color: white;">Explore Now</a></button></p>
+        </div>
+    </div>
+    <br>
+    <div class="navigation-manual slide-btn">
+        <input type="radio" class="dot" id="radio1">
+        <input type="radio" class="dot" id="radio2">
+        <input type="radio" class="dot" id="radio3">
+    </div>
+
+
+    <!-- Second Section Starts -->
+    
+    <div class="second-section">
+        <h3>About Everything Art & Craft</h3>
+        <p>Welcome – you’re in the perfect place for all your art and craft inspiration. We want to help you express your personality, have more fun and learn through creativity. With stacks of new ideas, hints and tips, blogs, tutorials, news and free events, we’re everything art and craft!</p>
+        <div class="second-section-features" >
+            <div class="row">
+                <div class="column" style="background-color:#dbd7d7; height: 91px;">
+                    <img src="/images/delivery-van.png" alt="" height="40px" class="delivery-van">
+                    <div class="deliveryvan-text">
+                <h2>Free Shipping</h2>
+                <p>Free shipping on all over India</p>
+            </div>
+                </div>
+                <div class="column" style="background-color:#dbd7d7; height: 91px;">
+                    <img src="/images/time.png" alt="" height="30px" class="clock-time">
+                    <div class="clock-text">
+                <h2>Same Day Shipping</h2>
+                <p>Order Mon-Fri for same day shipping</p>
+            </div>
+                </div>
+                <div class="column" style="background-color:#dbd7d7; height:91px;">
+                    <img src="/images/coupon.png" alt="" height="33px" class="coupon">
+                    <div class="coupon-text">
+                <h2>Weekly Discounts</h2>
+                <p>Watch out for our monthly discounts</p>
+            </div>
+                </div>
+                <div class="column" style="background-color:#dbd7d7; height: 91px;" >
+                    <a href="#footer"><img src="/images/customer-service.png" alt="" height="33px" class="customer-service"></a>
+                    <div class="customerservice-text">
+                <h2>Contact Us</h2>
+                <p>We're here to help! Contact us with ease</p>
+            </div>
+                </div>
+        </div>
+    </div>
+    </div>
+</div>
+
+
+<!-- Arts Section Starts Here -->
+
+<div id="arts">
+<div class="arts-section">
+    <h1>Arts Collections</h1>
+</div>
+    <div class="arts-products">
+        <div class="list">
+            <div class="item">
+                <div class="img">
+                    <img src="/images/buddhar-art.webp" alt="">
+                </div>
+                <div class="content">
+                    <div class="category"></div>
+                    <div class="title">Neha Art NehaAG_buddha Acrylic 17 inch x 15.5 inch Pain...</div>
+                    <p>With frame</p>
+                    <div class="">
+                        <span class="old">₹499</span>
+                        <span class="old" style="text-decoration:line-through;">₹1150</span>
+                    </div>
+                    <div id="two-btn">
+                    <div class="buy-now">
+                        <button class="buyNow">Buy Now</button>
+                    </div>
+                    <div class="add-cart">
+                    <button class="addCart">Add to Cart</button>
+                </div>
+            </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img">
+                    <img src="/images/ram-lakshamana-art.webp" alt="">
+                </div>
+                <div class="content">
+                    <div class="category"></div>
+                    <div class="title">Chaque Decor Black Frame Ram Laxman Sita & Hanuman ji T...</div>
+                    <p>With frame</p>
+                    <div class="">
+                        <span class="old">₹629</span>
+                        <span class="old" style="text-decoration:line-through;">₹799</span>
+                    </div>
+                    <div class="buy-now">
+                        <button class="buyNow">Buy Now</button>
+                    </div>
+                    <div class="add-cart">
+                    <button class="addCart">Add to Cart</button>
+                </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img">
+                    <img src="/images/cocnutsaleman-art.jpg" alt="">
+                </div>
+                <div class="content">
+                    <div class="category"></div>
+                    <div class="title">Chaque Decor Black Frame Coconut Texture Paper Art Prin...</div>
+                    <p>With frame</p>
+                    <div class="">
+                        <span class="old">₹539</span>
+                        <span class="old" style="text-decoration:line-through;">₹699</span>
+                    </div>
+                    <div class="buy-now">
+                        <button class="buyNow">Buy Now</button>
+                    </div>
+                    <div class="add-cart">
+                    <button class="addCart">Add to Cart</button>
+                </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img">
+                    <img src="/images/temple-art.jpg" alt="">
+                </div>
+                <div class="content">
+                    <div class="category"></div>
+                    <div class="title">jadoun Digital Handmade Oil Painting Wooden Photo Frame...</div>
+                    <p>With frame</p>
+                    <div class="">
+                        <span class="old">₹399</span>
+                        <span class="old" style="text-decoration:line-through;">₹1499</span>
+                    </div>
+                    <div class="buy-now">
+                        <button class="buyNow">Buy Now</button>
+                    </div>
+                    <div class="add-cart">
+                    <button class="addCart">Add to Cart</button>
+                </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img">
+                    <img src="/images/cowoneneck-art.jpg" alt="">
+                </div>
+                <div class="content">
+                    <div class="category"></div>
+                    <div class="title">The Hue By Kanchan Beautiful handmade Painting of Lord ...</div>
+                    <p>With frame</p>
+                    <div class="">
+                        <span class="old">₹1299</span>
+                        <span class="old" style="text-decoration:line-through;">₹3099</span>
+                    </div>
+                    <div class="buy-now">
+                        <button class="buyNow">Buy Now</button>
+                    </div>
+                    <div class="add-cart">
+                    <button class="addCart">Add to Cart</button>
+                </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img">
+                    <img src="/images/horserun-art.jpg" alt="">
+                </div>
+                <div class="content">
+                    <div class="category"></div>
+                    <div class="title">Neha Art NehaAG_buddha Acrylic 17 inch x 15.5 inch Pain...</div>
+                    <p>With frame</p>
+                    <div class="">
+                        <span class="old">₹499</span>
+                        <span class="old" style="text-decoration:line-through;">₹1150</span>
+                    </div>
+                    <div class="buy-now">
+                        <button class="buyNow">Buy Now</button>
+                    </div>
+                    <div class="add-cart">
+                    <button class="addCart">Add to Cart</button>
+                </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img">
+                    <img src="/images/rani-art.jpg" alt="">
+                </div>
+                <div class="content">
+                    <div class="category"></div>
+                    <div class="title">Chaque Decor History For A Leady Original Handmade Oil ...</div>
+                    <p>With frame</p>
+                    <div class="">
+                        <span class="old">₹3,329</span>
+                        <span class="old" style="text-decoration:line-through;">₹8520</span>
+                    </div>
+                    <div class="buy-now">
+                        <button class="buyNow">Buy Now</button>
+                    </div>
+                    <div class="add-cart">
+                    <button class="addCart">Add to Cart</button>
+                </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img">
+                    <img src="/images/Sivan-night-art.jpg" alt="">
+                </div>
+                <div class="content">
+                    <div class="category"></div>
+                    <div class="title">Neha Art Gallery Shiva handmade canvas Acrylic 16 inch ...</div>
+                    <p>With frame</p>
+                    <div class="">
+                        <span class="old">₹2099</span>
+                        <span class="old" style="text-decoration:line-through;">₹3999</span>
+                    </div>
+                    <div class="buy-now">
+                        <button class="buyNow">Buy Now</button>
+                    </div>
+                    <div class="add-cart">
+                    <button class="addCart">Add to Cart</button>
+                </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Crafts Section Starts Here -->
+
+<div id="crafts">
+    <div class="crafts-section">
+        <h1>Crafts Collections</h1>
+    </div>
+    
+        <div class="crafts-products">
+            <div class="list">
+                <div class="item">
+                    <div class="img">
+                        <img src="/images/Coconutwax-crafts" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="category"></div>
+                        <div class="title">Aromatic Puducherry Wax Candle in Coconut (2 Pcs)</div>
+                        <p>Handmade</p>
+                        <div class="">
+                            <span class="old">₹890</span>
+                            <span class="old" style="text-decoration:line-through;">₹1150</span>
+                        </div>
+                        <div class="buy-now">
+                            <button class="buyNow">Buy Now</button>
+                        </div>
+                        <div class="add-cart">
+                        <button class="addCart">Add to Cart</button>
+                    </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <img src="/images/woddencube-crafts.webp" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="category"></div>
+                        <div class="title">GreenTouch Crafts Wooden Handmade Indian Unique Puzzle</div>
+                        <p>Handmade</p>
+                        <div class="">
+                            <span class="old">₹899</span>
+                            <span class="old" style="text-decoration:line-through;">₹1099</span>
+                        </div>
+                        <div class="buy-now">
+                            <button class="buyNow">Buy Now</button>
+                        </div>
+                        <div class="add-cart">
+                        <button class="addCart">Add to Cart</button>
+                    </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <img src="/images/rajasthani-doll-crafts.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="category"></div>
+                        <div class="title">JH Gallery Handmade Recycled Material Rajasthani Dolls Puppet Tealight Candle Holder</div>
+                        <p>Handmade</p>
+                        <div class="">
+                            <span class="old">₹259</span>
+                            <span class="old" style="text-decoration:line-through;">₹599</span>
+                        </div>
+                        <div class="buy-now">
+                            <button class="buyNow">Buy Now</button>
+                        </div>
+                        <div class="add-cart">
+                        <button class="addCart">Add to Cart</button>
+                    </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <img src="/images/Steelhandmadeknife-crafts.avif" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="category"></div>
+                        <div class="title">Damascus steel hunting knife| Handmade hunting Bush Craft knife| Damascus knife with sheath</div>
+                        <p>Handmade</p>
+                        <div class="">
+                            <span class="old">₹2071</span>
+                            <span class="old" style="text-decoration:line-through;">₹6150</span>
+                        </div>
+                        <div class="buy-now">
+                            <button class="buyNow">Buy Now</button>
+                        </div>
+                        <div class="add-cart">
+                        <button class="addCart">Add to Cart</button>
+                    </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <img src="/images/carrieer-crafts.webp" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="category"></div>
+                        <div class="title">Handmade Bamboo Fruit/Flower/Bans Tokri/Multi Purpose Basket </div>
+                        <p>Handmade</p>
+                        <div class="">
+                            <span class="old">₹299</span>
+                            <span class="old" style="text-decoration:line-through;">₹699</span>
+                        </div>
+                        <div class="buy-now">
+                            <button class="buyNow">Buy Now</button>
+                        </div>
+                        <div class="add-cart">
+                        <button class="addCart">Add to Cart</button>
+                    </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <img src="/images/chairsland-crafts.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="category"></div>
+                        <div class="title">Handcraft Sheesham Wooden Book Holder Display Stand | Folding Religious Prayer Free</div>
+                        <p>Handmade</p>
+                        <div class="">
+                            <span class="old">₹599</span>
+                            <span class="old" style="text-decoration:line-through;">₹1499</span>
+                        </div>
+                        <div class="buy-now">
+                            <button class="buyNow">Buy Now</button>
+                        </div>
+                        <div class="add-cart">
+                        <button class="addCart">Add to Cart</button>
+                    </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <img src="/images/Tictactoe.craft.webp" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="category"></div>
+                        <div class="title">Karigar Noughts and Crosses Game Brass Wooden Tic Tac Toe Game - Brown</div>
+                        <p>Handmade</p>
+                        <div class="">
+                            <span class="old">₹1099</span>
+                            <span class="old" style="text-decoration:line-through;">₹1689</span>
+                        </div>
+                        <div class="buy-now">
+                            <button class="buyNow">Buy Now</button>
+                        </div>
+                        <div class="add-cart">
+                        <button class="addCart">Add to Cart</button>
+                    </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <img src="/images/wallbag-crafts.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="category"></div>
+                        <div class="title">Wall Mounted Plant Pot</div>
+                        <p>Handmade</p>
+                        <div class="">
+                            <span class="old">₹209</span>
+                            <span class="old" style="text-decoration:line-through;">₹800</span>
+                        </div>
+                        <div class="buy-now">
+                            <button class="buyNow">Buy Now</button>
+                        </div>
+                        <div class="add-cart">
+                        <button class="addCart">Add to Cart</button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!-- Diy Projects Section Starts Here -->
+
+<div id="diyprojects">
+    <div class="diyprojects-section">
+        <h1>DIY Projects Collections</h1>
+    </div>
+    
+        <div class="diyprojects-products">
+            <div class="list">
+                <div class="item">
+                    <div class="img">
+                        <img src="/images/photoalbum-DIY.webp" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="category"></div>
+                        <div class="title">Explosion Box Handmade Photo Album, Hexagon Shape, 6 Sides, Perfect for Birthday,</div>
+                        <p>Handmade</p>
+                        <div class="">
+                            <span class="old">₹849</span>
+                            <span class="old" style="text-decoration:line-through;">₹2090</span>
+                        </div>
+                        <div class="buy-now">
+                            <button class="buyNow">Buy Now</button>
+                        </div>
+                        <div class="add-cart">
+                        <button class="addCart">Add to Cart</button>
+                    </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <img src="/images/magictoy-DIY.avif" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="category"></div>
+                        <div class="title">Magic Gate DIY Hut Gift Building Toys DIY Minia, Birthday Gift</div>
+                        <p>Handmade</p>
+                        <div class="">
+                            <span class="old">₹2289</span>
+                            <span class="old" style="text-decoration:line-through;">₹4576</span>
+                        </div>
+                        <div class="buy-now">
+                            <button class="buyNow">Buy Now</button>
+                        </div>
+                        <div class="add-cart">
+                        <button class="addCart">Add to Cart</button>
+                    </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <img src="/images/homedecor-DIY.avif" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="category"></div>
+                        <div class="title">Home Decor, Woven Art Basket, Wave Basket, Decor Basket, Flower Pot, Flower Vase, Bolga Basket..</div>
+                        <p>Handmade</p>
+                        <div class="">
+                            <span class="old">₹5490</span>
+                            <span class="old" style="text-decoration:line-through;">₹9049</span>
+                        </div>
+                        <div class="buy-now">
+                            <button class="buyNow">Buy Now</button>
+                        </div>
+                        <div class="add-cart">
+                        <button class="addCart">Add to Cart</button>
+                    </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <img src="/images/gifttags-DIY.jpg" alt="" style="height: 150px;">
+                    </div>
+                    <div class="content">
+                        <div class="category"></div>
+                        <div class="title">Clickedin – “Thank You Tags” Pre-Designed Gift Tags 50 Pieces with Thread, Celebration and Return Gift Tag</div>
+                        <p>With frame</p>
+                        <div class="">
+                            <span class="old">399</span>
+                            <span class="old" style="text-decoration:line-through;">₹849</span>
+                        </div>
+                        <div class="buy-now">
+                            <button class="buyNow">Buy Now</button>
+                        </div>
+                        <div class="add-cart">
+                        <button class="addCart">Add to Cart</button>
+                    </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <img src="/images/lightshed-crafts.jpeg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="category"></div>
+                        <div class="title">Nexat Decorative lighting. Chandelier Ceiling Lamp  (Brown)</div>
+                        <p>With frame</p>
+                        <div class="">
+                            <span class="old">₹999</span>
+                            <span class="old" style="text-decoration:line-through;">₹1350</span>
+                        </div>
+                        <div class="buy-now">
+                            <button class="buyNow">Buy Now</button>
+                        </div>
+                        <div class="add-cart">
+                        <button class="addCart">Add to Cart</button>
+                    </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <img src="/images/kratichain-DIY.webp" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="category"></div>
+                        <div class="title">Raymond Chain blue cool sunlasting chain..</div>
+                        <p>With frame</p>
+                        <div class="">
+                            <span class="old">₹199</span>
+                            <span class="old" style="text-decoration:line-through;">₹450</span>
+                        </div>
+                        <div class="buy-now">
+                            <button class="buyNow">Buy Now</button>
+                        </div>
+                        <div class="add-cart">
+                        <button class="addCart">Add to Cart</button>
+                    </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <img src="/images/diwalicup-DIY.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="category"></div>
+                        <div class="title">Diwali Handmade Diya - 100% Natural Handmade Coated with paint and clay..</div>
+                        <p>With frame</p>
+                        <div class="">
+                            <span class="old">₹399</span>
+                            <span class="old" style="text-decoration:line-through;">₹750</span>
+                        </div>
+                        <div class="buy-now">
+                            <button class="buyNow">Buy Now</button>
+                        </div>
+                        <div class="add-cart">
+                        <button class="addCart">Add to Cart</button>
+                    </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <img src="/images/antiquesbaster-DIY.webp" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="category"></div>
+                        <div class="title">Room Decor standing toy wooden toy amd metal pipe stuctured</div>
+                        <p>With frame</p>
+                        <div class="">
+                            <span class="old">₹1899</span>
+                            <span class="old" style="text-decoration:line-through;">₹2850</span>
+                        </div>
+                        <div class="buy-now">
+                            <button class="buyNow">Buy Now</button>
+                        </div>
+                        <div class="add-cart">
+                        <button class="addCart">Add to Cart</button>
+                    </div>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Review Details -->
+
+    <div id="review">
+<div class="review-container">
+    <div class="review-section">
+        <h1>Review</h1>
+        </div>
+        <div class="review-list">
+        <div class="review-card">
+            <div class="img-review">
+            <img src="/images/artist-manufacturer.jpg" alt="John"  >
+        </div>
+            <h3>Rohit</h3>
+            <p class="title">I have been customer of them for few years, i love their product varieties and they give wonderful service to customers. For craft makers its a wonderful website for purchase.</p>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+          </div>
+          <div class="review-card">
+            <div class="img-review">
+            <img src="/images/replace reviewer.jpeg" alt="John" height="100%"  >
+        </div>
+            <h3>Daniel</h3>
+            <p class="title">You can find all crafts,arts and diy projects related products in best price. Customer friendly and quick response to all queries. Super fast delivery and beautiful products.</p>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+    </div>
+          <div class="review-card">
+            <div class="img-review">
+            <img src="/images/diy-project manufacturer.jpg" alt="John"  >
+        </div>
+            <h3>Vicky</h3>
+            <p class="title">Excellent service. Will be happy to shop again.. Definitely recommend the store to my friends.. Thank you craftworld!</p>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+          </div>
+        </div>
+    </div>
+</div>
+
+<hr>
+
+<!-- Footer section starting -->
+<footer id="footer">
+    
+   <div class="main-content">
+    <div class="left box">
+        <h2>About us</h2>
+        <div class="content-footer">
+            <p>Empowering a community of creatives to turn their passions into successful businesses, one handmade product at a time.</p>
+            <div class="social">
+                <a href="https://www.facebook.com/"><span class="fab fa-facebook-f"></span></a>
+                <a href="https://x.com/i/flow/login"><span class="fab fa-twitter"></span></a>
+                <a href="https://www.instagram.com/"><span class="fab fa-instagram"></span></a>
+                <a href="https://www.youtube.com/"><span class="fab fa-youtube"></span></a>
+            </div>
+        </div>
+    </div>
+    <div class="center box">
+        <h2>Address</h2>
+        <div class="content-footer">
+            <div class="place">
+                <span class="fas fa-map-marker-alt"></span>
+                <span class="text-footer">WhiteTown, Puducherry</span>
+            </div>
+            <div class="phone">
+                <span class="fas fa-phone-alt"></span>
+                <span class="text-footer">+914132970770</span>
+            </div>
+            <div class="email">
+                <span class="fas fa-envelope"></span>
+                <span class="text-footer">craftworld@gmail.com</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="right box">
+        <h2>Contact</h2>
+        <div class="content-footer">
+            <form action="#">
+                <div class="email-footer">
+                    <div class="text-footer">Email *</div>
+                    <input type="email" required>
+                </div>
+                <div class="msg-footer">
+                    <div class="text-footer">Message *</div>
+                    <textarea rows="2" cols="25" required></textarea>
+                </div>
+                <div class="btn-footer">
+                    <button type="submit">Send</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+   </div>
+   <div class="copyright"><span>Copyright © 2024 Craft World</span></div>
+</footer>
+
+    <script src="index.js"></script>
+
+    </body>
+    </html>
+
+
